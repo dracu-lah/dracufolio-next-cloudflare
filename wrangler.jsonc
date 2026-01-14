@@ -24,15 +24,5 @@
       "service": "dracufolio-next-cloudflare",
     },
   ],
-  "kv_namespaces": [
-    {
-      "binding": "NEXT_CACHE_WORKERS_KV",
-      "id": "dracufolio-next-image-cache",
-    },
-    {
-      "binding": "dracufolio_next_image_cache",
-      "id": "f989fe53173f4ed08ecfbb17f5d0e848",
-    },
-  ],
 }
 
