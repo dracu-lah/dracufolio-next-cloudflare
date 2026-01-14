@@ -17,7 +17,7 @@
   "services": [
     {
       "binding": "WORKER_SELF_REFERENCE",
-      "service": "dracufolio-next-cloudflare",
+      "service": "dracufolio",
     },
   ],
   "durable_objects": {
