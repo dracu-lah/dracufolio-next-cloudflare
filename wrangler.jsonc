@@ -11,12 +11,8 @@
   "r2_buckets": [
     {
       "binding": "NEXT_INC_CACHE_R2_BUCKET",
-      "bucket_name": "dracufolio-next-cache",
-    },
-    {
-      "bucket_name": "dracufolio-next-cache",
-      "binding": "dracufolio_next_cache",
-    },
+      "bucket_name": "dracufolio-next-cache"
+    }
   ],
   "services": [
     {
@@ -24,12 +20,26 @@
       "service": "dracufolio-next-cloudflare",
     },
   ],
+  "durable_objects": {
+    "bindings": [
+      {
+        "name": "NEXT_CACHE_DO_QUEUE",
+        "class_name": "DOQueueHandler"
+      }
+    ]
+  },
+  "migrations": [
+    {
+      "tag": "v1",
+      "new_sqlite_classes": ["DOQueueHandler"]
+    }
+  ],
   "d1_databases": [
     {
-      "binding": "dracufolio_next_d1_next_cache",
+      "binding": "NEXT_TAG_CACHE_D1",
       "database_name": "dracufolio_next_d1_next_cache",
-      "database_id": "6eb9522e-903f-4555-84f4-78e07c5a2000",
-    },
+      "database_id": "6eb9522e-903f-4555-84f4-78e07c5a2000"
+    }
   ],
 }
 
