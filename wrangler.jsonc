@@ -41,4 +41,7 @@
       "database_id": "6eb9522e-903f-4555-84f4-78e07c5a2000",
     },
   ],
+  "images": {
+    "binding": "IMAGES",
+  },
 }
