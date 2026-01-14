@@ -20,27 +20,27 @@
       "service": "dracufolio",
     },
   ],
-  "durable_objects": {
-    "bindings": [
-      {
-        "name": "NEXT_CACHE_DO_QUEUE",
-        "class_name": "DOQueueHandler",
-      },
-    ],
-  },
-  "migrations": [
-    {
-      "tag": "v1",
-      "new_sqlite_classes": ["DOQueueHandler"],
-    },
-  ],
-  "d1_databases": [
-    {
-      "binding": "NEXT_TAG_CACHE_D1",
-      "database_name": "dracufolio_next_d1_next_cache",
-      "database_id": "6eb9522e-903f-4555-84f4-78e07c5a2000",
-    },
-  ],
+  // "durable_objects": {
+  //   "bindings": [
+  //     {
+  //       "name": "NEXT_CACHE_DO_QUEUE",
+  //       "class_name": "DOQueueHandler",
+  //     },
+  //   ],
+  // },
+  // "migrations": [
+  //   {
+  //     "tag": "v1",
+  //     "new_sqlite_classes": ["DOQueueHandler"],
+  //   },
+  // ],
+  // "d1_databases": [
+  //   {
+  //     "binding": "NEXT_TAG_CACHE_D1",
+  //     "database_name": "dracufolio_next_d1_next_cache",
+  //     "database_id": "6eb9522e-903f-4555-84f4-78e07c5a2000",
+  //   },
+  // ],
   "images": {
     "binding": "IMAGES",
   },
