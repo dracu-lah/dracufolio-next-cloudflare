@@ -12,6 +12,8 @@ const nextConfig: NextConfig = {
         hostname: "**", // Allow images from any hostname
       },
     ],
+    loader: "custom",
+    loaderFile: "./imageLoader.ts",
   },
 };
 
